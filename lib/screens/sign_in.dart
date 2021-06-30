@@ -144,10 +144,10 @@ class _SignInState extends State<SignIn> with SingleTickerProviderStateMixin {
           background: Stack(
             fit: StackFit.expand,
             children: [
-              Image.network(
-                "https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&h=350",
-                fit: BoxFit.cover,
+              Image.asset( "assets/images/ic_login_signup_hader.png",
+              fit: BoxFit.cover,
               ),
+
               Padding(
                 padding: const EdgeInsets.all(85),
                 child: Image.asset(
