@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
               color: Colors.grey[300],
               child:  Center(child: TextButton(onPressed: () async {
                 SharedPreferences prefs = await SharedPreferences.getInstance();
-                prefs.setBool("isLoggedIn", true);
+                prefs.setBool("isLoggedIn", false);
                 Navigator.of(context).pushReplacement(
                     MaterialPageRoute(builder: (context) => const SignIn()));
 
