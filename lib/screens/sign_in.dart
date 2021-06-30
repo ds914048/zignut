@@ -213,7 +213,7 @@ class _SignInState extends State<SignIn> with SingleTickerProviderStateMixin {
                                 totalSwitches: 2,
                                 radiusStyle: true,
                                 cornerRadius: 40.0,
-                                inactiveBgColor: Colors.grey[200],
+                                inactiveBgColor: Colors.grey[100],
                                 // ignore: prefer_const_literals_to_create_immutables
                                 labels: [
                                   'Customer',
@@ -278,22 +278,25 @@ class _SignInState extends State<SignIn> with SingleTickerProviderStateMixin {
                                   "password must be longer than 7 characters",
                               minWord: 8,
                             ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                TextButton(
-                                    onPressed: () {},
-                                    child: const Text(
-                                      "Forget Password ?",
-                                      style: TextStyle(
-                                          color: Color(0xFF1669CB),
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w500),
-                                    ))
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 30),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  TextButton(
+                                      onPressed: () {},
+                                      child: const Text(
+                                        "Forget Password ?",
+                                        style: TextStyle(
+                                            color: Color(0xFF1669CB),
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w500),
+                                      ))
+                                ],
+                              ),
                             ),
                             SizedBox(
-                              height: deviceHeight * 0.04,
+                              height: deviceHeight * 0.03,
                             ),
                             CustomInkButton(
                               onTap: () {
@@ -402,7 +405,7 @@ class _SignInState extends State<SignIn> with SingleTickerProviderStateMixin {
                               totalSwitches: 2,
                               radiusStyle: true,
                               cornerRadius: 40.0,
-                              inactiveBgColor: Colors.grey[200],
+                              inactiveBgColor: Colors.grey[100],
                               // ignore: prefer_const_literals_to_create_immutables
                               labels: [
                                 'Customer',

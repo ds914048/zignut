@@ -46,13 +46,13 @@ class CustomTextFormField extends StatelessWidget {
               const BoxShadow(
                   color: Color.fromRGBO(22, 105, 203, 0.1),
                   offset: Offset(0, 0),
-                  blurRadius: 3.0,
-                  spreadRadius: 1.0),
+                  blurRadius: 5.0,
+                  spreadRadius: 2.0),
               const BoxShadow(
                   color: Color.fromRGBO(22, 105, 203, 0.1),
-                  offset: Offset(-0, -0),
-                  blurRadius: 3.0,
-                  spreadRadius: 1.0),
+                  offset: Offset(0, 0),
+                  blurRadius: 5.0,
+                  spreadRadius: 2.0),
             ]),
         child: Padding(
           padding: const EdgeInsets.only(bottom: 5.0),
